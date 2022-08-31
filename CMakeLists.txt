@@ -1,0 +1,141 @@
+cmake_minimum_required(VERSION 3.23)
+project(C__)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(M01_cout_variable)
+include_directories(M02_if_else_switch)
+include_directories(M03_schleifen)
+include_directories(M04_funktionen)
+include_directories(M05_strings)
+include_directories(M06_vector_array)
+include_directories(M07_map)
+include_directories(M08_pointer_referenzen)
+include_directories(O_01_Klasse)
+include_directories(O_02_Methoden)
+include_directories(O_03_Konstruktor)
+include_directories(O_04_Ableiten)
+include_directories(O_05_New)
+include_directories(O_05_New/O_5_aufgeteilt)
+include_directories(O_06_Assoziationen)
+include_directories(O_07_Polymorphie)
+include_directories(O_07_Polymorphie/O_7a_override)
+include_directories(O_07_Polymorphie/O_7b_virtual_abstract)
+include_directories(O_08_Patterns)
+include_directories(O_08_Patterns/O14_singleton)
+include_directories(O_08_Patterns/O15_observer)
+include_directories(O_08_Patterns/O15_observer/observer_gen)
+include_directories(O_08_Patterns/O15_observer/observer_gen/src)
+include_directories(O_08_Patterns/O15_observer/observer_gen2)
+include_directories(O_08_Patterns/O15_observer/observer_gen2/src)
+include_directories(O_08_Patterns/O16_mvc)
+include_directories(O_10_Aufgaben)
+include_directories(O_11_Bibliotheken)
+
+add_executable(C__
+        M01_cout_variable/M00_start/formelsammlung.cpp
+        M01_cout_variable/M00_start/Test.cpp
+        M01_cout_variable/Anleitung_M01.txt
+        M01_cout_variable/Aufgaben_M01.txt
+        M01_cout_variable/E_01_cout.cpp
+        M01_cout_variable/E_02a_variablen.cpp
+        M01_cout_variable/E_02b_variablen2.cpp
+        M01_cout_variable/E_02c_variablen3.cpp
+        M01_cout_variable/E_02d_const.cpp
+        M01_cout_variable/E_03_cin.cpp
+        M01_cout_variable/E_04_datentypen.cpp
+        M01_cout_variable/E_05a_bool.cpp
+        M01_cout_variable/E_05b_bool2.cpp
+        M01_cout_variable/E_06_modulo.cpp
+        M02_if_else_switch/E_06a_bedingungen.cpp
+        M02_if_else_switch/E_06b_bedingungen2.cpp
+        M02_if_else_switch/E_06c_bedingungen3.cpp
+        M02_if_else_switch/E_07_switch.cpp
+        M03_schleifen/E_08_schleifen.cpp
+        M03_schleifen/E_08b_schleifen2.cpp
+        M04_funktionen/E_04a_funktionen.cpp
+        M04_funktionen/E_04b_funktionen2.cpp
+        M04_funktionen/E_04c_funktionen3.cpp
+        M04_funktionen/E_04d_funktionen4.cpp
+        M04_funktionen/E_04e_funktionen5.cpp
+        M05_strings/3_string.cpp
+        M05_strings/4_c_string.c
+        M05_strings/E05b_umlaute.cpp
+        M05_strings/E05c_string_cgi.cpp
+        M05_strings/E05d_string_split.cpp
+        M05_strings/util.cpp
+        M05_strings/util.h
+        M06_vector_array/3a_vector.cpp
+        M06_vector_array/3b_vector2.cpp
+        M06_vector_array/4_array.cpp
+        M06_vector_array/5a_c_array.cpp
+        M06_vector_array/5b_c_array.c
+        M06_vector_array/6_c_array_2d.c
+        M07_map/STL_3_map.cpp
+        M08_pointer_referenzen/C_1_pointer.cpp
+        M08_pointer_referenzen/C_1a_zeiger.cpp
+        M08_pointer_referenzen/C_2a_referenzen.cpp
+        M08_pointer_referenzen/C_2b_funktion_referenz.cpp
+        M08_pointer_referenzen/E_11_pointer.cpp
+        M08_pointer_referenzen/E_11b_pointer2.cpp
+        O_01_Klasse/O_1_struct.cpp
+        O_01_Klasse/O_1b_class.cpp
+        O_02_Methoden/O_2_methoden.cpp
+        O_02_Methoden/O_2b_statische_methoden.cpp
+        O_03_Konstruktor/O_3_konstruktor.cpp
+        O_04_Ableiten/O_4_ableiten.cpp
+        O_05_New/O_5_aufgeteilt/bbwangehoeriger.cpp
+        O_05_New/O_5_aufgeteilt/bbwangehoeriger.h
+        O_05_New/O_5_aufgeteilt/main.cpp
+        O_05_New/O_5_aufgeteilt/person.cpp
+        O_05_New/O_5_aufgeteilt/person.h
+        O_05_New/O_5_aufgeteilt/tttt.h
+        O_05_New/O_5a_new.cpp
+        O_05_New/O_5b_dynamisch.cpp
+        O_06_Assoziationen/O10_interfaces/interface.cpp
+        O_06_Assoziationen/O10_interfaces/interface2.cpp
+        O_06_Assoziationen/O11_assoziation/assoziation.cpp
+        O_06_Assoziationen/O12_aggregation/aggregation.cpp
+        O_06_Assoziationen/O13_komposition/komp.cpp
+        O_07_Polymorphie/O_7a_override/chihuahua.cpp
+        O_07_Polymorphie/O_7a_override/chihuahua.h
+        O_07_Polymorphie/O_7a_override/hund.cpp
+        O_07_Polymorphie/O_7a_override/hund.h
+        O_07_Polymorphie/O_7a_override/main.cpp
+        O_07_Polymorphie/O_7a_override/rottweiler.cpp
+        O_07_Polymorphie/O_7a_override/rottweiler.h
+        O_07_Polymorphie/O_7b_virtual_abstract/chihuahua.cpp
+        O_07_Polymorphie/O_7b_virtual_abstract/chihuahua.h
+        O_07_Polymorphie/O_7b_virtual_abstract/hund.cpp
+        O_07_Polymorphie/O_7b_virtual_abstract/hund.h
+        O_07_Polymorphie/O_7b_virtual_abstract/main.cpp
+        O_07_Polymorphie/O_7b_virtual_abstract/rottweiler.cpp
+        O_07_Polymorphie/O_7b_virtual_abstract/rottweiler.h
+        O_08_Patterns/O14_singleton/singleton.cpp
+        O_08_Patterns/O15_observer/observer_gen/src/heizung.cpp
+        O_08_Patterns/O15_observer/observer_gen/src/heizung.h
+        O_08_Patterns/O15_observer/observer_gen/src/iobserver.h
+        O_08_Patterns/O15_observer/observer_gen/src/isubject.h
+        O_08_Patterns/O15_observer/observer_gen/src/kuehlschrank.cpp
+        O_08_Patterns/O15_observer/observer_gen/src/kuehlschrank.h
+        O_08_Patterns/O15_observer/observer_gen/src/main.cpp
+        O_08_Patterns/O15_observer/observer_gen/src/temperatursensor.cpp
+        O_08_Patterns/O15_observer/observer_gen/src/temperatursensor.h
+        O_08_Patterns/O15_observer/observer_gen2/src/heizung.cpp
+        O_08_Patterns/O15_observer/observer_gen2/src/heizung.h
+        O_08_Patterns/O15_observer/observer_gen2/src/iobserver.h
+        O_08_Patterns/O15_observer/observer_gen2/src/ITemperaturSensor.h
+        O_08_Patterns/O15_observer/observer_gen2/src/kuehlschrank.cpp
+        O_08_Patterns/O15_observer/observer_gen2/src/kuehlschrank.h
+        O_08_Patterns/O15_observer/observer_gen2/src/main.cpp
+        O_08_Patterns/O15_observer/observer_gen2/src/temperatursensor.cpp
+        O_08_Patterns/O15_observer/observer_gen2/src/temperatursensor.h
+        O_08_Patterns/O15_observer/observer_gen2/src/tsensor.cpp
+        O_08_Patterns/O15_observer/observer_gen2/src/tsensor.h
+        O_08_Patterns/O15_observer/observer.cpp
+        O_08_Patterns/O16_mvc/mvc.cpp
+        O_10_Aufgaben/MiniTBUI.cpp
+        O_11_Bibliotheken/06_main.cpp
+        O_11_Bibliotheken/TestLib.cpp
+        O_11_Bibliotheken/TestLib.h)
